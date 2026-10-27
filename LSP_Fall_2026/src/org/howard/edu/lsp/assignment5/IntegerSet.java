@@ -3,10 +3,7 @@ package org.howard.edu.lsp.assignment5;
 import java.util.TreeSet;
 
 /**
- * Represents a mathematical set of integers. Duplicates are not allowed.
- * Internally backed by a sorted set, which is kept private (encapsulated).
- * Operations that return an IntegerSet always return a new, independent object
- * and never modify either input set.
+ * Represents a set of integers with no duplicate values.
  */
 public class IntegerSet {
     private final TreeSet<Integer> set = new TreeSet<>();
@@ -25,7 +22,7 @@ public class IntegerSet {
     }
 
     /**
-     * Compares this set to another for equality, ignoring insertion order.
+     * Checks if this set contains the same elements as another set.
      * @param b the set to compare with
      * @return true if both sets contain exactly the same elements
      */
@@ -37,7 +34,7 @@ public class IntegerSet {
     }
 
     /**
-     * Checks whether a value is in this set.
+     * Checks if the set contains a value.
      * @param value the value to look for
      * @return true if the value is present
      */
@@ -86,7 +83,7 @@ public class IntegerSet {
     }
 
     /**
-     * Returns the union of this set and another.
+     * Returns a new set containing the elements from both sets.
      * @param b the other set
      * @return a new set containing elements in either set
      */
@@ -98,7 +95,7 @@ public class IntegerSet {
     }
 
     /**
-     * Returns the intersection of this set and another.
+     * Returns a new set containing elements found in both sets.
      * @param b the other set
      * @return a new set containing elements found in both sets
      */
@@ -110,7 +107,7 @@ public class IntegerSet {
     }
 
     /**
-     * Returns the difference of this set minus another.
+     * Returns the elements in this set that are not in b.
      * @param b the other set
      * @return a new set containing elements in this set but not in b
      */
@@ -122,7 +119,7 @@ public class IntegerSet {
     }
 
     /**
-     * Returns the assignment-specific complement: elements in b but not in this set.
+     * Returns the elements in b that are not in this set.
      * @param b the other set
      * @return a new set containing elements in b but not in this set
      */
@@ -144,7 +141,7 @@ public class IntegerSet {
     }
 
     /**
-     * Checks whether this set and b share no elements.
+     * Checks if the two sets have no elements in common.
      * @param b the other set
      * @return true if the sets are disjoint
      */
@@ -158,7 +155,7 @@ public class IntegerSet {
     }
 
     /**
-     * Returns the symmetric difference of this set and another.
+     * Returns a new set containing elements that are in only one of the sets.
      * @param b the other set
      * @return a new set containing elements that occur in exactly one of the two sets
      */
@@ -173,7 +170,7 @@ public class IntegerSet {
     }
 
     /**
-     * Checks whether the set has no elements.
+     * Checks if the set is empty.
      * @return true if the set is empty
      */
     public boolean isEmpty() {
@@ -181,7 +178,7 @@ public class IntegerSet {
     }
 
     /**
-     * Returns the elements in ascending order, e.g. [-3, 0, 8, 15]; an empty set gives [].
+     * Returns the elements in ascending order
      * @return the string representation of this set
      */
     @Override

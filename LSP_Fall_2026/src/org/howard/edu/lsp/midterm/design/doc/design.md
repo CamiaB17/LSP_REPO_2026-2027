@@ -68,7 +68,7 @@
 - RegistrationRepository
 - Registration
 
-## Class: ConfirmationService
+Class: ConfirmationService
 
 **Responsibilities:**
 - Define the operation for sending registration confirmations.
@@ -80,7 +80,7 @@
 - TextConfirmation
 - Registration
 
-## Class: EmailConfirmation
+Class: EmailConfirmation
 
 **Responsibilities:**
 - Send a registration confirmation through email.
@@ -90,7 +90,7 @@
 - ConfirmationService
 - Registration
 
-## Class: TextConfirmation
+Class: TextConfirmation
 
 **Responsibilities:**
 - Send a registration confirmation through text message.

@@ -1,0 +1,8 @@
+Benefits
+AI was a huge help for me this semester, almost like having a tutor available whenever I got stuck on tricky Java concepts. It helped me skip past all the repetitive setup code so I could actually focus on understanding object-oriented programming and how my assignments were structured. For example, on one assignment where I was trying to handle edge cases and asynchronous code, I just couldn't figure out why my program kept failing. I asked AI to explain what my code was doing step-by-step, and that breakdown made the whole execution flow finally click for me.
+
+Challenges
+At the same time, I definitely learned that AI isn't always right. During one project, it gave me a code snippet that used outdated syntax and the wrong parameter types, which ended up throwing runtime errors. Trying to paste that code without looking closely just made debugging way more confusing. To fix it, I had to open the official Java docs, double-check everything myself, and write my own simple unit tests to see where things were actually breaking. That experience taught me to treat AI answers like a rough draft and rely on my own testing instead of just trusting what it outputs.
+
+Moving Forward
+In my future classes and coding projects, I plan on using AI as a helper rather than relying on it to do the work for me. I'll use it to brainstorm ideas, help generate basic test cases, or double-check my code for messy parts. But when it comes to figuring out the core logic, writing algorithms, and debugging errors, I'm going to do that hands-on myself. That way I can stay productive without losing my own coding and problem-solving skills.
