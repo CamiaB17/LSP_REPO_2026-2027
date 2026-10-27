@@ -1,0 +1,1 @@
+No external assistance was used.

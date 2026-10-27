@@ -1,0 +1,1 @@
+No external assistannce was used

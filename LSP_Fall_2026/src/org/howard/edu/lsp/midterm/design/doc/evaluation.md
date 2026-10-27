@@ -1,0 +1,11 @@
+# Object-Oriented Design Evaluation
+
+The `CourseRegistration` class has several object-oriented design problems. Its main issue is that it has too many responsibilities in one class. The `registerStudent()` method calculates tuition, applies discounts, prints information, writes registration records to a file, sends a confirmation message, and logs the time. This makes the class harder to maintain because a change to one responsibility could require modifying the same method.
+
+Another problem is that all five fields are public. Other classes can directly change the student information, course information, and credit hours without validation. This weakens encapsulation and could lead to incorrect registration data. The fields should be private, with appropriate methods to access or update them.
+
+The class also has tight coupling to specific implementation details. It directly uses `FileWriter` to save records and uses console output to simulate sending email confirmations. If the university changes to database storage or actual email services, the class would need to be modified. This makes the design less flexible and harder to extend.
+
+The design conflicts with Arthur Riel's object-oriented design heuristics, including keeping related data and behavior together, avoiding classes with unrelated responsibilities, and minimizing unnecessary dependencies. The class combines registration management, tuition calculation, persistence, communication, and logging instead of assigning these responsibilities to appropriate classes. It also handles exceptions by printing a stack trace rather than providing a clear error-handling strategy.
+
+A better design would separate these responsibilities into classes such as `RegistrationService`, `TuitionCalculator`, `RegistrationRepository`, and `ConfirmationService`. Each class could focus on one main responsibility and collaborate with other classes when necessary. This would improve encapsulation, maintainability, extensibility, and testability.
